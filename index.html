@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WalletPay</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Wallet<span>Pay</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#transactions">Transactions</a></li>
+        <li><a href="#crypto">Crypto</a></li>
+      </ul>
+    </nav>
+    <button class="cta">Sign In</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Your Gateway to Seamless Transactions</h1>
+      <p>Send, receive, and manage your money and cryptocurrencies with ease.</p>
+      <div class="buttons">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Explore Features</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/wallet.png" alt="Wallet App">
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose WalletPay?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Instant Transfers</h3>
+        <p>Send and receive money in seconds.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Secure & Reliable</h3>
+        <p>Your funds are safe with advanced encryption.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-coins"></i>
+        <h3>Crypto Support</h3>
+        <p>Manage Bitcoin, Ethereum, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="transactions" id="transactions">
+    <h2>Recent Transactions</h2>
+    <div class="transaction-list">
+      <!-- Dynamically populated with JavaScript -->
+    </div>
+  </section>
+
+  <section class="crypto" id="crypto">
+    <h2>Your Crypto Portfolio</h2>
+    <div class="crypto-cards">
+      <div class="card">
+        <img src="assets/icons/bitcoin.png" alt="Bitcoin">
+        <h3>Bitcoin</h3>
+        <p>0.0000 BTC</p>
+      </div>
+      <div class="card">
+        <img src="assets/icons/ethereum.png" alt="Ethereum">
+        <h3>Ethereum</h3>
+        <p>0.0000 ETH</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 WalletPay. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

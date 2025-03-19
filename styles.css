@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  header .logo span {
+    color: #00c853;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #00c853;
+  }
+  
+  header .cta {
+    background: #00c853;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  header .cta:hover {
+    background: #009624;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .hero-content .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn-primary {
+    background: #00c853;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid #00c853;
+    color: #00c853;
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 100px 10%;
+    background: #1a1a1a;
+  }
+  
+  .features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .card i {
+    font-size: 40px;
+    color: #00c853;
+    margin-bottom: 20px;
+  }
+  
+  /* Transactions Section */
+  .transactions {
+    padding: 100px 10%;
+    background: #0f0f0f;
+  }
+  
+  .transactions h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .transaction-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Crypto Section */
+  .crypto {
+    padding: 100px 10%;
+    background: #1a1a1a;
+  }
+  
+  .crypto h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .crypto-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      display: none;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-cards, .crypto-cards {
+      flex-direction: column;
+    }
+  }
